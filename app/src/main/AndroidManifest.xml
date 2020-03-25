@@ -17,8 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".FakDetailActivity"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:label="Detail Singkat Fakultas"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".FakWeb"
+            android:label="Web Profile Fakultas"
+            android:parentActivityName=".FakDetailActivity"></activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>
