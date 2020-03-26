@@ -21,7 +21,7 @@
             android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".FakWeb"
             android:label="Web Profile Fakultas"
-            android:parentActivityName=".FakDetailActivity"></activity>
+            android:parentActivityName=".MainActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 

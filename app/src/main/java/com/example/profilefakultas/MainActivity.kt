@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         showDetailActivityIntent.putExtra(Intent.EXTRA_TEXT, fakItem.namaFak)
         showDetailActivityIntent.putExtra(Intent.EXTRA_TEMPLATE, fakItem.descFak)
         showDetailActivityIntent.putExtra(Intent.EXTRA_REFERRER, fakItem.fotoFak.toString())
+        showDetailActivityIntent.putExtra(Intent.ACTION_PICK, fakItem.web)
+        showDetailActivityIntent.putExtra(Intent.ACTION_CALL, fakItem.email)
         startActivity(showDetailActivityIntent)
     }
 
@@ -93,9 +95,10 @@ class MainActivity : AppCompatActivity() {
         partList.add(
             FakData(
                 "Fachrurrozy N",
-                "Surabaya, 18 Oktober 1999" +
-                        "\n" + "Jl. Prapen Indah Blok F/20" +
-                        "\n" + "+62 857-4595-8007" +
+                       "TTL: Surabaya, 18 Oktober 1999" +
+                        "\n" + "Alamat: Jl. Prapen Indah Blok F/20" +
+                        "\n" + "No. Telp: +62 857-4595-8007" +
+                        "\n" + "Riwayat Pendidikan:" +
                         "\n" + "SDI Al-Azhar Kelapa Gading Surabaya" +
                         "\n" + "SMPN 35 Surabaya" +
                         "\n" + "SMAN 14 Surabaya\n",

@@ -52,6 +52,6 @@ class FakDetailActivity : AppCompatActivity() {
         mailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
         mailIntent.putExtra(Intent.EXTRA_SUBJECT, "Do Not Reply")
         mailIntent.putExtra(Intent.EXTRA_TEXT, "Email Testing")
-        startActivity(Intent.createChooser(mailIntent, "Select Client"))
+        startActivity(Intent.createChooser(mailIntent, ""))
     }
 }
